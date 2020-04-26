@@ -1,0 +1,63 @@
+﻿# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: hieroglyph_mdc
+  name: "埃及聖書體MdC"
+  version: "20200426"
+  author:
+    - polyhedron<biopolyhedron@gmail.com>
+  description: |
+    埃及聖書體，採用Gardiner標記和Manuel de Codage (MdC)編碼。
+    控制標記：大左右組合用'-'（即切斷，無Unicode符号），上下組合用':'，小左右組合用'*'。
+    王名框用'<' '>'，hwt框用'<h1' 'h2>'。
+    角組合用c1 ~ c4。
+    （目前尚無字體可正確顯示組合及人名框，控制字符不可見或顯示爲方塊等，但輸入時應先輸入。）
+    數字：1用1e0，20用2e1，以此類推。
+    默認MdC音碼不接任何符号，直接加'-'即繼續以利盲打；音碼後接';'爲單個字符；音碼後接'~'爲補全音素的詞。
+    如𓊵(R4)可用'R4'或'Htp;'輸入，而𓊵𓐰𓏏𓐱𓊪(R4:t*p)可用'Htp~'輸入。
+    字典中的空格轉寫爲'.'。
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 聖書體, 西文 ]
+
+engine:
+  processors:
+    - ascii_composer
+    - selector
+    - speller
+    - punctuator  # 先於 editor 才會使空格作符號上屏
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - table_translator
+
+menu:
+  alternative_select_keys: '!@#$%'
+  page_size: 5
+
+speller:
+  alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890()<>*:~+;./'
+  delimiter: '-'
+  auto_select: false
+
+translator:
+  dictionary: hieroglyph_mdc
+  enable_user_dict: false
+  enable_sentence: true
+  comment_format:
+    - xform/^~(.*)$/$1/
+
+punctuator:  # 只須定義空格一個符號
+  use_space: true
+  half_shape: &punct
+    ' ' : { commit: ' ' }
+  full_shape: *punct
