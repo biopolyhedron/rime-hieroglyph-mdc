@@ -4,7 +4,7 @@
 schema:
   schema_id: hieroglyph_mdc
   name: "埃及聖書體MdC"
-  version: "20200426"
+  version: "20200503"
   author:
     - polyhedron<biopolyhedron@gmail.com>
   description: |
@@ -45,7 +45,7 @@ menu:
   page_size: 5
 
 speller:
-  alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890()<>*:~+;./'
+  alphabet: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890()<>*:~+;./&'
   delimiter: '-'
   auto_select: false
 
@@ -61,3 +61,7 @@ punctuator:  # 只須定義空格一個符號
   half_shape: &punct
     ' ' : { commit: ' ' }
   full_shape: *punct
+
+style: 
+  font_face: "NewGardiner"
+#  font_point: 18

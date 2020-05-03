@@ -13,7 +13,7 @@
 
 ---
 name: hieroglyph_mdc
-version: "20200426"
+version: "20200427"
 sort: original
 ...
 
@@ -1142,6 +1142,7 @@ sort: original
 𓐲	c1
 𓐳	c2
 𓐴	c3
+𓐴	&
 𓐵	c4
 𓐶	+
 𓐷	(
@@ -1635,8 +1636,68 @@ sort: original
 𓋯	Sndyt
 𓋗	sxmty
 
-#not in MdC
+#phonetic not in MdC	
 𓍯	o
+𓄏	ab;
+𓆝	aD;
+𓎚	aD;
+𓌤	aH;
+𓊨	As;
+𓄼	As;
+𓇇	Ax;
+𓎺	bA;
+𓎻	bA;
+𓍒	DA;
+𓂞	di;
+𓏙	Di;
+𓐞	gs;
+𓌋	HD;
+𓈟	Hm;
+𓌼	Hn;
+𓎨	Hn;
+𓈐	Hr;
+𓃙	ib;
+𓏶	im;
+𓀟	in;
+𓏌	in;
+𓏎	in;
+𓀹	ir;
+𓆊	it;
+𓂻	iw;
+𓃛	iw;
+𓂝	mi;
+𓂟	mi;
+𓈘	mi;
+𓌇	mn;
+𓉕	mr;
+𓍋	mr;
+𓅐	mt;
+𓂜	ni;
+𓂢	ni;
+𓌱	nm;
+𓍇	nw;
+𓅯	pA;
+𓂾	pd;
+𓌒	pD;
+𓐠	sA;
+𓆆	SA;
+𓏴	sD;
+𓍢	Sn;
+𓍱	Ss;
+𓄝	st;
+𓇿	tA;
+𓍔	tA;
+𓌐	tp;
+𓇅	wD;
+𓎘	wD;
+𓇬	wn;
+𓆩	xA;
+𓂙	Xn;
+𓂤	xw;
+𓎂	zA;
+𓎃	zA;
+𓃰	Abw;
+𓋴	snb;
 
 #other words	
 𓀀	i;
@@ -1646,12 +1707,10 @@ sort: original
 𓀇	wab;
 𓀆𓃀𓅱𓏏	wabwt~
 𓀉	bAgi;
-𓀉	Hmsi;
 𓀊𓀀𓐱𓁐𓐰𓏥	hnw~
 𓀋𓀜	ATp~
 𓊵𓐰𓏏𓐱𓊪	Htp~
 𓍹𓇋𓏠𓐰𓈖𓊵𓐰𓏏𓐱𓊪𓍺	imnHtp~
-𓀋𓀜	fAi~
 𓀋𓊪𓐰𓏲𓏛𓐰𓏥	Atpw~
 𓀋𓏏𓏛𓐰𓏥	kAt~
 𓀋𓏪	kAt~
@@ -1663,7 +1722,6 @@ sort: original
 𓀐	mt;
 𓀐𓐰𓏏	mt~
 𓀒	xr;
-𓀒	xrw;
 𓀒𓐰𓏏	sxr~
 𓀓	ksw;
 𓀔𓀀	Xrd~
@@ -1672,7 +1730,6 @@ sort: original
 𓀔𓏥𓈖𓐰𓂣	Xrdw.n.mH~
 𓀖𓏏	imty~
 𓀗	iAwi;
-𓀗	iky;
 𓀗𓀀	wr~
 𓀗𓐰𓏏	iAwt~
 𓀘	smsw;
@@ -1682,10 +1739,8 @@ sort: original
 𓀜𓅱𓂡	mniw~
 𓀝𓂝	Hwi~
 𓀠	qAt;
-𓀠	qAyt;
 𓀠𓏏	qAi~
 𓀠𓏜	qAi~
-𓀠𓏜	qAt~
 𓀢	iAw;
 𓀧	xwsi;
 𓀨	qd;
@@ -1706,7 +1761,6 @@ sort: original
 𓀸𓄿-𓅱-𓏏𓐰𓂡𓐰𓏥	sAwt~
 𓀸𓄿𓅱𓂡𓐰𓏏𓏭	sAwty~
 𓀸𓄿𓏲𓀜	sAi~
-𓀸𓄿𓏲𓀜	sAw~
 𓀸𓅱	sAw~
 𓀸𓅱𓀜	sAw~
 𓀸𓅱𓂡	mniw~
@@ -1737,9 +1791,7 @@ sort: original
 𓀽𓊃𓐰𓊃𓐰𓏛	Spzzw~
 𓀾	twt;
 𓀾𓅱𓏛𓐰𓏥	xprw~
-𓀾𓅱𓏛𓐰𓏥	irw~
 𓁀	sDr;
-𓁀	XAt;
 𓁂	Htp.di.nsw;
 𓁒	msi;
 𓁛	ra;
@@ -1750,3 +1802,7 @@ sort: original
 𓁶𓐱𓐎𓐰𓏛	tp.Hsb~
 𓁶𓐰𓂝𓅱	tp.awy~
 𓁶𓂾𓏏𓀜	tpt.rd~
+𓅜𓏤	Ax~
+𓅜𓐍𓐴𓅱𓏛	Axw~
+𓄖𓐰𓊾	HkAw~
+𓎛𓂓𓄿𓀁𓏛𓐰𓏥	HkA~
